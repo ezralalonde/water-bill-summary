@@ -1,11 +1,11 @@
 import getpass
 import sys
 from splinter import Browser
-                    
+
 with Browser() as browser:
-    # Visit URL 
+    # Visit URL
     url = 'https://myaccount.saskenergy.com/'
-    browser.visit(url) 
+    browser.visit(url)
 
     username = browser.find_by_xpath('//input[contains(@name, "username")]')[0]
     username.fill(sys.argv[1])

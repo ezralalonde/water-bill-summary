@@ -1,7 +1,7 @@
 import getpass
 import sys
 from splinter import Browser
-                    
+
 with Browser() as browser:
     # Visit URL
     url = 'https://apps2.saskatoon.ca/lapp/eUtilAcct/AccountSummary.aspx'
