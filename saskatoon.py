@@ -1,11 +1,11 @@
 import getpass
 import sys
-from splinter import Browser 
+from splinter import Browser
                     
-with Browser() as browser: 
-    # Visit URL 
+with Browser() as browser:
+    # Visit URL
     url = 'https://apps2.saskatoon.ca/lapp/eUtilAcct/AccountSummary.aspx'
-    browser.visit(url) 
+    browser.visit(url)
 
     username = browser.find_by_xpath('//input[contains(@name, "Username")]')[0]
     username.fill(sys.argv[1])
